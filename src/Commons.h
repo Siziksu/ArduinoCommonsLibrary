@@ -38,5 +38,23 @@ class Led {
   private:
     byte _pin;
 };
+
+/**
+  * Buzzer object.
+  *
+  * @param pin Pin Number
+  */
+class Buzzer {
+  public:
+    Buzzer(byte pin);
+    byte pin();
+    void buzz();
+    void stopBuzz();
+    void playTone(uint16_t frequency, uint32_t duration = 0);
+    void stopTone();
+
+  private:
+    byte _pin;
+};
 #endif
 

@@ -43,3 +43,27 @@ void Led::off() {
   digitalWrite(_pin, LOW);
 }
 
+Buzzer::Buzzer(byte pin) {
+  _pin = pin;
+  pinMode(_pin, OUTPUT);
+}
+
+byte Buzzer::pin() {
+  return _pin;
+}
+
+void Buzzer::buzz() {
+  digitalWrite(_pin, HIGH);
+}
+
+void Buzzer::stopBuzz() {
+  digitalWrite(_pin, LOW);
+}
+
+void Buzzer::playTone(uint16_t frequency, uint32_t duration = 0) {
+  tone(_pin, frequency, duration);
+}
+
+void Buzzer::stopTone() {
+  noTone(_pin);
+}
