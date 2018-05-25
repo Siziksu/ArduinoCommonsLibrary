@@ -60,7 +60,7 @@ void Buzzer::stopBuzz() {
   digitalWrite(_pin, LOW);
 }
 
-void Buzzer::playTone(uint16_t frequency, uint32_t duration = 0) {
+void Buzzer::playTone(uint16_t frequency, uint32_t duration) {
   tone(_pin, frequency, duration);
 }
 
