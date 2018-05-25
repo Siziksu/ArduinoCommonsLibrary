@@ -56,5 +56,23 @@ class Buzzer {
   private:
     byte _pin;
 };
+
+/**
+  * Ultrasonic object.
+  *
+  * @param trigger Pin Number
+  * @param echo    Pin Number
+  */
+class Ultrasonic {
+  public:
+    Ultrasonic(byte trigger, byte echo);
+    void trigger();
+    long echoTime();
+    int distance(long time);
+
+  private:
+    byte _pinTrigger;
+    byte _pinEcho;
+};
 #endif
 

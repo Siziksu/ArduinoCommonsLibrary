@@ -67,3 +67,25 @@ void Buzzer::playTone(uint16_t frequency, uint32_t duration) {
 void Buzzer::stopTone() {
   noTone(_pin);
 }
+
+Ultrasonic::Ultrasonic(byte trigger, byte echo) {
+  _pinTrigger = trigger;
+  _pinEcho = echo;
+  pinMode(_pinTrigger, OUTPUT);
+  pinMode(_pinEcho, INPUT);
+  digitalWrite(_pinTrigger, LOW);
+}
+
+void Ultrasonic::trigger() {
+  digitalWrite(_pinTrigger, LOW);
+  delayMicroseconds(2);
+  digitalWrite(_pinTrigger, HIGH);
+}
+
+long Ultrasonic::echoTime() {
+  return pulseIn(_pinEcho, HIGH);
+}
+
+int Ultrasonic::distance(long time) {
+  return int((time / 2) * 0.034827);
+}
