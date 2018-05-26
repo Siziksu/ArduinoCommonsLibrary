@@ -13,7 +13,7 @@ class Button {
   public:
     Button(byte pin, byte debounce);
     byte pin();
-    byte pressed();
+    byte state();
 
   private:
     byte _pin;

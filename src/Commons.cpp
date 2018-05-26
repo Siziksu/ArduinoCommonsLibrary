@@ -10,7 +10,7 @@ byte Button::pin() {
   return _pin;
 }
 
-byte Button::pressed() {
+byte Button::state() {
   _current = !digitalRead(_pin);
   if (_previous != _current) {
      _previous = _current;
