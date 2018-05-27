@@ -1,6 +1,6 @@
 # Arduino Commons Library
 
-Library for common components used in arduino.
+Library for common components of Arduino.
 
 ## Objects
 
