@@ -13,6 +13,13 @@ byte Button::pin() {
 byte Button::state() {
   _current = !digitalRead(_pin);
   if (_previous != _current) {
+    if (_current != HIGH && _current != LOW) {
+      return 3; // wrong state
+    }
+    if (_previous != HIGH && _previous != LOW) {
+      _previous = 0;
+      return 3; // wrong state
+    }
      _previous = _current;
     if (_current == HIGH) {
       delay(_debounce);

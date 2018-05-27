@@ -17,9 +17,9 @@ class Button {
 
   private:
     byte _pin;
-    byte _debounce;
-    byte _previous;
-    byte _current;
+    byte _debounce = 0;
+    byte _previous = 0;
+    byte _current = 0;
 };
 
 /**
