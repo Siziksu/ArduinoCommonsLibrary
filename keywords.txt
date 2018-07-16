@@ -6,26 +6,26 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-Button     KEYWORD1
-Led        KEYWORD1
-Buzzer     KEYWORD1
-Ultrasonic KEYWORD1
+Button	KEYWORD1
+Led	KEYWORD1
+Buzzer	KEYWORD1
+Ultrasonic	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-pin      KEYWORD2
-state    KEYWORD2
-on       KEYWORD2
-off      KEYWORD2
-buzz     KEYWORD2
-stopBuzz KEYWORD2
-playTone KEYWORD2
-stopTone KEYWORD2
-trigger  KEYWORD2
-echoTime KEYWORD2
-distance KEYWORD2
+pin	KEYWORD2
+state	KEYWORD2
+on	KEYWORD2
+off	KEYWORD2
+buzz	KEYWORD2
+stopBuzz	KEYWORD2
+playTone	KEYWORD2
+stopTone	KEYWORD2
+trigger	KEYWORD2
+echoTime	KEYWORD2
+distance	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
